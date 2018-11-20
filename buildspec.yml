@@ -2,3 +2,16 @@ version: 0.2
 artifacts:
   files:
     - '**/*'
+phases:
+ install:
+   commands:
+     - echo "install step"
+ pre_build:
+   commands:
+     - npm run test
+ build:
+   commands:
+     - echo "build step"
+ post_build:
+   commands:
+     - echo "post_build step"
