@@ -5,7 +5,7 @@ artifacts:
 phases:
  install:
    commands:
-     - echo "install step"
+     - npm install
  pre_build:
    commands:
      - npm run test
